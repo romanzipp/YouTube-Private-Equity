@@ -1,0 +1,70 @@
+name: Add channel
+description: Submit a channel which is currently not listed.
+title: "Add channel: "
+labels: [ "data" ]
+assignees:
+  - romanzipp
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Channel
+
+  - type: input
+    id: youtube_channel_id
+    attributes:
+      label: "YouTube channel ID"
+      description: "Please [see here](https://github.com/romanzipp/YouTube-Private-Equity#find-youtube-channel-id) on how to find out a given YouTube channel's ID"
+      placeholder: "ex. UCODHrzPMGbNv67e84WDZhQQ"
+    validations:
+      required: true
+  - type: input
+    id: youtube_channel_handle
+    attributes:
+      label: "YouTube channel Handle"
+      description: "Please [see here](https://github.com/romanzipp/YouTube-Private-Equity#find-youtube-channel-id) on how to find out a given YouTube channel's Handle"
+      placeholder: "ex. fern"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: "Name"
+      description: "Name of the channel as visible on YouTube"
+      placeholder: "ex. fern"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <br/>
+        
+        ## Company
+        Provide information about the company owning the channel.
+
+  - type: input
+    id: company_title
+    attributes:
+      label: "Company"
+      placeholder: "ex. Electify"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <br/>
+        
+        ## Ownership
+        To keep our data as accourate as possible, please also provide proof for that submission.
+
+  - type: input
+    id: source_url
+    attributes:
+      label: "Link to source"
+      description: "Please provide a credible source to an article or announcement"
+      placeholder: "ex. https://news.google.com/..."
+    validations:
+      required: true
+
