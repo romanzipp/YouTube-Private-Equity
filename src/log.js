@@ -12,36 +12,36 @@ const log = {
             levelNum: 100,
             levelName: 'VERBOSE',
             func: console.debug,
-            debugOnly: true,
+            debugOnly: true
         },
         debug: {
             highlight: 'hsl(238, 100%, 70%)',
             levelNum: 200,
             levelName: 'DEBUG',
             func: console.log,
-            debugOnly: true,
+            debugOnly: true
         },
         info: {
             highlight: 'hsl(199, 100%, 70%)',
             levelNum: 300,
             levelName: 'INFO',
             func: console.log,
-            debugOnly: false,
+            debugOnly: false
         },
         warn: {
             highlight: 'hsl(24, 100%, 70%)',
             levelNum: 400,
             levelName: 'WARN',
             func: console.log,
-            debugOnly: false,
+            debugOnly: false
         },
         error: {
             highlight: 'hsl(0, 100%, 70%)',
             levelNum: 500,
             levelName: 'ERROR',
             func: console.log,
-            debugOnly: false,
-        },
+            debugOnly: false
+        }
     },
 
     log(level, args) {
@@ -62,7 +62,7 @@ const log = {
             `color:${this.appColor};font-family:monospace;font-weight:bold`,
             `background-color:${highlight};color:black;font-weight:bold`,
             `color:${highlight};font-weight:bold`,
-            ...args,
+            ...args
         ]);
     },
 
@@ -83,7 +83,7 @@ const log = {
     },
     error(...args) {
         this.log('error', args);
-    },
+    }
 };
 
 export function createLogger(section, options = {}) {

@@ -1,13 +1,13 @@
-import renderContent from "../renderContent";
-import logo from "~/assets/logo.svg";
-import "./style.css";
+import renderContent from '../renderContent';
+import './style.css';
+import { sendMessageToBackground } from '~/spaceship.js';
 
 renderContent(import.meta.PLUGIN_WEB_EXT_CHUNK_CSS_PATHS, (appRoot) => {
-  const logoImageUrl = new URL(logo, import.meta.url).href;
+    sendMessageToBackground(1, { 'foo': 'bar' });
 
-  appRoot.innerHTML = `
-    <div class="ytpe-container">
-      YTPE
-    </div>
-  `;
+    appRoot.innerHTML = `
+      <div class="ytpe-container">
+        YTPE
+      </div>
+    `;
 });
