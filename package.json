@@ -1,14 +1,14 @@
 {
   "name": "vite-web-extension",
   "version": "1.0.0",
-  "displayName": "Vite Web Extension",
+  "displayName": "YouTube Private Equity",
   "author": "@samrum/vite-plugin-web-extension",
-  "description": "A @samrum/vite-plugin-web-extension web extension",
+  "description": "Find out which channels are owned by Private Equity companies",
   "type": "module",
   "scripts": {
     "build": "vite build",
     "dev:firefox": "MANIFEST_VERSION=2 BROWSER_TARGET=firefox vite build --watch --mode development --minify false",
-    "dev:chrome": "MANIFEST_VERSION=3 BROWSER_TARGET=chrome vite dev",
+    "dev:chrome": "MANIFEST_VERSION=3 BROWSER_TARGET=chrome vite dev"
   },
   "license": "MIT",
   "devDependencies": {

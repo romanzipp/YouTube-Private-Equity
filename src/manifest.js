@@ -4,7 +4,7 @@ const sharedManifest = {
   content_scripts: [
     {
       js: ["src/entries/contentScript/primary/main.js"],
-      matches: ["https://*.youtube.com"],
+      matches: ["*://*.youtube.com/*"],
     },
   ],
   icons: {
