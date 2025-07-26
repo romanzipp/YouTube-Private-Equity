@@ -19,6 +19,7 @@
     "web-ext": "^7.8.0"
   },
   "dependencies": {
+    "csv-parse": "^6.1.0",
     "webextension-polyfill": "^0.10.0"
   }
 }
