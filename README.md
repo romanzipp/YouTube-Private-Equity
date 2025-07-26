@@ -33,33 +33,32 @@ TODO
 
 TODO
 
+### Disclaimer
+
+TODO
+
 ## 🛠️ Project Setup
 
 ```sh
 npm install
 ```
 
-## Disclaimer
-
-TODO
-
-## 🛠️ Commands
-
 ### Build
 
-#### Development, HMR
+#### Firefox
 
-Hot Module Reloading is used to load changes inline without requiring extension rebuilds and extension/page reloads
-Currently only works in Chromium based browsers.
+Rebuilds extension on file changes. Requires a reload of the extension (and page reload if using content scripts).
+
 ```sh
-npm run dev
+npm run dev:firefox
 ```
 
-#### Development, Watch
+#### Chrome
 
-Rebuilds extension on file changes. Requires a reload of the extension (and page reload if using content scripts)
+Hot Module Reloading is used to load changes inline without requiring extension rebuilds and extension/page reloads. Currently **only works in Chromium based browsers**.
+
 ```sh
-npm run watch
+npm run dev:chrome
 ```
 
 #### Production
@@ -67,17 +66,6 @@ npm run watch
 Minifies and optimizes extension build
 ```sh
 npm run build
-```
-
-### Load extension in browser
-
-Loads the contents of the dist directory into the specified browser
-```sh
-npm run serve:chrome
-```
-
-```sh
-npm run serve:firefox
 ```
 
 ## References
